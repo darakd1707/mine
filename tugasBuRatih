@@ -1,0 +1,47 @@
+package tugasburatih;
+
+import java.util.Scanner;
+
+public class TugasBuRatih {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Pemilihan Kelas Expertise angkatan 31 SMK Telkom Malang");
+        System.out.println("----------------------------------------------------------");
+            String nama,kelas,jurusan;
+            String RPL = null,TKJ;
+            int pilihan = 0,pilihan2;
+        System.out.println("Masukkan nama lengkap Anda");
+            nama = input.nextLine();
+        System.out.println("Masukkan kelas asal Anda");
+            kelas = input.nextLine();
+        System.out.println("Masukkan jurusan Anda (RPL atau TKJ)");
+            jurusan = input.next();
+        switch(jurusan){
+            case "RPL":
+                       System.out.println("Pilih Kelas Expertise(masukkan kode angka)");
+                       System.out.println("1.Node JS-React");
+                       System.out.println("2.Laravel-Vue JS");
+                       System.out.println("3.Android");
+                       pilihan = input.nextInt();
+            switch(pilihan){
+                case 1:System.out.println("Anda masuk kelas Expertise Node JS-React");break;
+                case 2:System.out.println("Anda masuk kelas Expertise Laravel-Vue JS");break;
+                case 3:System.out.println("Anda masuk kelas Expertise Android");break;
+                
+           }break;
+            case "TKJ":System.out.println("Pilih Kelas Expertise(masukkan kode angka)");
+                        System.out.println("1.Cloud Computing");
+                        System.out.println("2.Cyber Security");
+                        pilihan2 = input.nextInt();
+             switch(pilihan2){
+                 case 1:System.out.println("Anda masuk Kelas Expertise Cloud Computing");break;
+                 case 2:System.out.println("Anda masuk Kelas Expertise Cyber Security");break;
+             }
+       }
+           
+   }
+            
+            
+    }
+    
+
